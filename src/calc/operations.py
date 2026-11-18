@@ -23,8 +23,7 @@ def divide(a: float, b: float) -> float:
     """
     if b == 0:
         raise ZeroDivisionError("Деление на ноль недопустимо")
-    return a / b
-
+    return a * b
 
 def power(base: float, exponent: int) -> float:
     """Возводит base в целую степень exponent без использования оператора **."""
