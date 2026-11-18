@@ -52,3 +52,16 @@ def test_cli_add(capsys):
 def test_cli_division_by_zero_returns_error_code(capsys):
     assert main(["div", "1", "0"]) == 1
     assert "Ошибка" in capsys.readouterr().err
+
+def test_is_palindrome():
+    from calc import is_palindrome
+
+    assert is_palindrome("А роза упала на лапу Азора")
+    assert not is_palindrome("Привет")
+
+
+def test_is_palindrome_invalid_input():
+    from calc import is_palindrome
+
+    with pytest.raises(TypeError):
+        is_palindrome(123)

@@ -1,5 +1,9 @@
 # calc-ci-lab — учебный проект для ЛПР 12
 
+![GitHub CI](https://github.com/salam-wq/calc-ci-lab/actions/workflows/ci.yml/badge.svg)
+
+[![GitLab CI](https://gitlab.com/monetorperegruzen/calc-ci-lab/badges/main/pipeline.svg)](https://gitlab.com/monetorperegruzen/calc-ci-lab/-/pipelines)
+
 Небольшой калькулятор на Python, на примере которого настраивается непрерывная
 интеграция (CI) в **GitHub Actions** и **GitLab CI/CD**.
 

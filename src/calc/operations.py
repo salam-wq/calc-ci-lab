@@ -33,3 +33,11 @@ def power(base: float, exponent: int) -> float:
     for _ in range(abs(exponent)):
         result *= base
     return result if exponent >= 0 else 1 / result
+
+def is_palindrome(s: str) -> bool:
+    """Проверяет палиндром без учёта регистра и пробелов."""
+    if not isinstance(s, str):
+        raise TypeError("Ожидается строка")
+
+    text = "".join(s.casefold().split())
+    return text == text[::-1]
